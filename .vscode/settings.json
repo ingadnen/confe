@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/c138e427-ff98-4b08-8ce9-523215cfe697/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/unik",
+    "appService.deploySubpath": "."
+}
