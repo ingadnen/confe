@@ -67,9 +67,9 @@ build-and-push-image:
           tags: ghcr.io/${{ env.REPO }}:${{ github.sha }}
           file: ./Dockerfile
 
-  deploy:
-    permissions:
-      contents: none
+    deploy:
+      permissions:
+       contents: none
     runs-on: ubuntu-latest
     needs: build
     environment:
