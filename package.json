@@ -2,7 +2,7 @@
     "name": "mirotalksfu",
     "version": "1.0.4",
     "description": "WebRTC SFU browser-based video calls",
-    "main": "Server.js",
+    "main": "app/src/Server.js",
     "scripts": {
         "test": "mocha \"test/test.js\"",
         "start": "node app/src/Server.js",
