@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy Node.js app to Azure Web App - univ-k
+name: Build and deploy Node.js app to Azure Web App - univ
 
 on:
   push:
@@ -24,7 +24,7 @@ jobs:
       - name: npm install and build
         run: |
           npm install
-          npm run build --if-present
+          npm run build --prod
       
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
@@ -50,6 +50,5 @@ jobs:
         id: deploy-to-webapp
         with:
           app-name: 'univ-k'
-          slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_6279D00E50ED4807A77929E93114863D }}
-          package: .
+          package: ./dest/univ-k
