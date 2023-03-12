@@ -5,6 +5,7 @@
 .git
 
 # npm
+node_modules
 
 
 # package
